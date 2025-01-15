@@ -40,9 +40,9 @@ export default function UploadZone({ onFileSelect }: UploadZoneProps) {
       <div className="space-y-4">
         <div className="text-5xl">📄</div>
         <h3 className="text-xl font-semibold text-gray-700">
-          {isDragActive ? 'Drop your PDF here' : 'Drag & Drop your PDF here'}
+          {isDragActive ? '把你的PDF放在这里' : '将PDF拖放到此处'}
         </h3>
-        <p className="text-gray-500">or click to select file</p>
+        <p className="text-gray-500">或单击以选择文件</p>
       </div>
     </div>
   )

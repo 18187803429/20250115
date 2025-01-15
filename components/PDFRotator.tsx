@@ -20,8 +20,7 @@ export function PDFRotator() {
     setFile(file)
     const url = URL.createObjectURL(file)
     setPdfUrl(url)
-    
-    // Reset rotations for new file
+
     const fileBuffer = await file.arrayBuffer()
     const pdfDoc = await PDFDocument.load(fileBuffer)
     const pages = pdfDoc.getPages()
